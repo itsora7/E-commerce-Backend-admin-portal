@@ -9,3 +9,8 @@ export const createAdmin = (obj) => {
 export const findAdmin = (filter) => {
   return AdminUserSchema.findOne(filter);
 };
+
+//find user by filter and update. @filter and @obj must be an object and
+export const findAdminAndUpdate = (filter, obj) => {
+  return AdminUserSchema.findOneAndUpdate(filter, obj);
+};
